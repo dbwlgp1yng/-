@@ -12,9 +12,7 @@ window.addEventListener('load', () => {
     document.addEventListener('mousemove', event => {
         const x = event.clientX;
         const y = event.clientY;
-    
-        console.log(`${x}, ${y}`);
-    
+        
         target.style.transform = `
             translate(${x - targetRectHalfWidth}px,
             ${y - targetRectHalfHeight}px)
@@ -28,5 +26,4 @@ window.addEventListener('load', () => {
     });
     
 })
-
 
