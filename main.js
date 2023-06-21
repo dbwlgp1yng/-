@@ -14,14 +14,13 @@ window.addEventListener('load', () => {
         const y = event.clientY;
         
         target.style.transform = `
-            translate(${x - targetRectHalfWidth}px,
-            ${y - targetRectHalfHeight}px)
-        `;
-    
-        horizontal.style.transform = `translate(0,${y}px)`;
-        vertical.style.transform = `translate(${x}px,0)`;
-    
-        tag.style.transform = `translate(${x}px,${y}px)`;
+            translate(
+                ${x - targetRectHalfWidth}px,
+                ${y - targetRectHalfHeight}px
+            )`;
+        vertical.style.transform = `translateX(${x}px)`;
+        horizontal.style.transform = `translateY(${y}px)`;
+        tag.style.transform = `translate(${x + 20}px,${y + 20}px)`;
         tag.innerHTML = `x축: ${x}px, y축: ${y}px`;
     });
     
