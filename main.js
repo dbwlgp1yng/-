@@ -18,8 +18,9 @@ window.addEventListener('load', () => {
                 ${x - targetRectHalfWidth}px,
                 ${y - targetRectHalfHeight}px
             )`;
-        vertical.style.transform = `translateX(${x}px)`;
+        vertical.style.transform = `translateX(${x}px )`;
         horizontal.style.transform = `translateY(${y}px)`;
+
         tag.style.transform = `translate(${x + 20}px,${y + 20}px)`;
         tag.innerHTML = `x축: ${x}px, y축: ${y}px`;
     });
